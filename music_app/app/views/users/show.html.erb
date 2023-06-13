@@ -1,0 +1,18 @@
+<input type="hidden"
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>">
+
+        <br>
+<p>My Info:</p>
+<br>
+<label>Email:</label>
+<li><%= @user.email %></li>
+<br>
+
+
+<a href="<%= session_url %>" method="POST"></a>
+<input type="hidden" name="_method" value="delete">
+
+<input type="submit" value="Log Out">
+
+    
